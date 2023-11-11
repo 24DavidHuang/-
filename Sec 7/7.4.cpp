@@ -1,12 +1,14 @@
 #include <stdio.h>
 #define MAXN 9 // 最大棋盘大小
+typedef long long ll;
 int n;
 int board[MAXN][MAXN];
 bool isvisit[MAXN][MAXN];
-int JC[11];
+ll JC[11];
 void Init(){
+    JC[0]=1;
     JC[1]=1;
-    for (int i = 2; i <=10 ; ++i) {
+    for (ll i = 2; i <=10 ; ++i) {
         JC[i]=i*JC[i-1];
     }
 }
@@ -22,35 +24,38 @@ bool check(int x, int y)
     return true;
 }
 
-int res;//结果数
-void DFS(int x, int maxsize) // 深度优先搜索的函数
-{
-    if (x == maxsize) { // 如果已经放置了maxsize个车，说明找到了一个解法
+ll res;//结果数
+void DFS(int x,int y, int size,int maxsize){
+    if (size == maxsize){
         res++;
         return;
     }
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) { // 遍历当前行的所有列
-            if (check(i, j)) { // 如果当前位置可以放置车
-                isvisit[i][j] = true; // 标记为已访问
-                DFS(x + 1, maxsize); // 递归搜索下一行
-                isvisit[i][j] = false; // 回溯，取消标记
-            }
-        }
+    if (x > n-1)
+        return;
+    if (y > n-1){
+        DFS(x + 1, 0, size, maxsize);
+        return;
     }
+    if (check(x, y))
+    {
+        isvisit[x][y] = true;
+        DFS(x, y + 1, size + 1, maxsize);
+        isvisit[x][y] = false;
+    }
+    DFS(x, y + 1, size, maxsize);
 }
 
 int main(){
     Init();
     while (~scanf("%d",&n)){
-        int result=JC[n];
+        ll result=JC[n];
         int flag=1;
         for (int i = 0; i < 9; ++i) {
             for (int j = 0; j < 9; ++j) {
                 board[i][j]=0;isvisit[i][j]=false;
             }
         }
-        //根据输入初始化棋盘，1表示禁止
+        //根据输入初始化棋盘，1表示禁止放置的位置
         for (int i = 0; i < n; ++i) {
             int size;
             scanf("%d",&size);
@@ -63,10 +68,10 @@ int main(){
         }
         for (int i = 0; i < n; ++i) {
             res=0;
-            DFS(0,i+1);
+            DFS(0,0,0,i+1);
             flag*=(-1);
             result+=flag*res*JC[n-1-i];
         }
-        printf("%d\n",result);
+        printf("%lld\n",result);
     }
 }
