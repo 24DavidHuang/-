@@ -223,6 +223,18 @@ build CMakeFiles/Algorithm.dir/Sec_5/5.6.cpp.obj: CXX_COMPILER__Algorithm_unscan
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sec_5
 
+build CMakeFiles/Algorithm.dir/Sec_6/6.2.cpp.obj: CXX_COMPILER__Algorithm_unscanned_Debug G$:/Algorithm/Sec$ 6/6.2.cpp || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Sec_6\6.2.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sec_6
+
+build CMakeFiles/Algorithm.dir/Sec_6/6.3.cpp.obj: CXX_COMPILER__Algorithm_unscanned_Debug G$:/Algorithm/Sec$ 6/6.3.cpp || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Sec_6\6.3.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sec_6
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Algorithm
@@ -231,7 +243,7 @@ build CMakeFiles/Algorithm.dir/Sec_5/5.6.cpp.obj: CXX_COMPILER__Algorithm_unscan
 #############################################
 # Link the executable Algorithm.exe
 
-build Algorithm.exe: CXX_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/7.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/8.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/1.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/2.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/3.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/4.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/5.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/7.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/7_2.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/2.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/2.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/3.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/4.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/4.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/5.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/7.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_4/4.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_4/4.2.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.2.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.3.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.4.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.5.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.6.cpp.obj
+build Algorithm.exe: CXX_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/7.cpp.obj CMakeFiles/Algorithm.dir/Sec_1/8.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/1.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/2.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/3.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/4.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/5.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/7.cpp.obj CMakeFiles/Algorithm.dir/Sec_2/7_2.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/2.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/2.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/3.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/4.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/4.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/5.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/6.cpp.obj CMakeFiles/Algorithm.dir/Sec_3/7.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_4/4.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_4/4.2.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.1.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.2.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.3.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.4.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.5.cpp.obj CMakeFiles/Algorithm.dir/Sec_5/5.6.cpp.obj CMakeFiles/Algorithm.dir/Sec_6/6.2.cpp.obj CMakeFiles/Algorithm.dir/Sec_6/6.3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Algorithm.dir

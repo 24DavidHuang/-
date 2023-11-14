@@ -32,4 +32,6 @@ add_executable(Algorithm main.cpp
         "Sec 5/5.4.cpp"
         "Sec 5/5.5.cpp"
         "Sec 5/5.6.cpp"
+        "Sec 6/6.2.cpp"
+        "Sec 6/6.3.cpp"
 )
